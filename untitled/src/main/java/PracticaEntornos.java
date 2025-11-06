@@ -10,7 +10,7 @@ public class PracticaEntornos {
         LocalDateTime fechaActual = LocalDateTime.now();
         int anyoActual = fechaActual.getYear();
         System.out.println("Año actual: "+anyoActual);
-        int edad = anyoActual - anyo; // <-- Error lógico intencional
+        int edad = anyoActual - anyo;
         if (edad > 18) {
             System.out.println("Eres mayor de edad");
         }
