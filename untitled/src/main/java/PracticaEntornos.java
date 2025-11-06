@@ -11,6 +11,7 @@ public class PracticaEntornos {
         int anyoActual = fechaActual.getYear();
         System.out.println("Año actual: "+anyoActual);
         int edad = anyoActual - anyo;
+        System.out.println("---------------------------");
         if (edad > 18) {
             System.out.println("Eres mayor de edad");
         }
