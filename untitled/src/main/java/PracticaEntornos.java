@@ -6,8 +6,11 @@ public class PracticaEntornos {
         Scanner sc = new Scanner(System.in);
         System.out.print("Introduce tu año de nacimiento:");
         int anyo = sc.nextInt();
+
         LocalDateTime fechaActual = LocalDateTime.now();
-        int edad = fechaActual.getYear() - anyo;
+        int anyoActual = fechaActual.getYear();
+        System.out.println("Año actual: "+anyoActual);
+        int edad = anyoActual - anyo;
         System.out.println("---------------------------");
         if (edad > 18) {
             System.out.println("Eres mayor de edad");
